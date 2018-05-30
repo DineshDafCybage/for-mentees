@@ -1,0 +1,324 @@
+@import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.sub-container{
+  width: 1000px;
+}
+
+/*--------------Header---------------*/
+
+.header {
+  background-image: url(../images/hero-image.png);
+  background-position: center;
+  background-size: cover;
+}
+.header-content {
+  color: #fff;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+  width: 500px;
+}
+
+/*--------------Navigation Bar-----------------*/
+
+.navbar {
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.navbar .menu-icon {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  display: none;
+}
+.navbar ul li {
+  display: inline-block;
+  margin: 8px;
+}
+.navbar ul {
+  float: right;
+}
+.logo-image {
+  margin: 5px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+.contact-btn {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  padding: 8px;
+  text-decoration: none;
+}
+
+/*-------------Buttons-------------*/
+
+.btns {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  margin: 30px 0;
+  padding: 10px;
+  width: 150px;
+}
+.ask-btn {
+  color: rgba(255, 0, 0, .6);
+}
+
+.watch-btn {
+  background-color: transparent;
+  color: #fff;
+  margin: 30px;
+}
+.scroll-btn {
+  opacity: .6;
+  padding-top: 200px;
+}
+img {
+  max-width: 100%;
+}
+
+/*-------------------icons-section----------------*/
+
+.icons-section {
+  margin: auto;
+  text-align: center;
+}
+.icon {  
+  display: inline-block;
+  padding: 30px 10px;
+  width: 210px;
+}
+.head {
+  color: rgba(255, 0, 0, .6);
+}
+.head-icon-sec {
+  font-size: 17px;
+}
+.askpr {
+  background-color: darkblue;
+  color: #fff;
+}
+
+/*------------------photo-section----------------*/
+
+.our-real {
+  margin: auto;
+  padding: 60px 0 0;
+}
+.custom-counter {
+  column-count: 2;
+  column-gap: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.custom-counter li {
+  counter-increment: step-counter;
+}
+
+.custom-counter li::before {
+  border: 1px solid grey;
+  border-radius: 50%;
+  content: counter(step-counter);
+  margin-right: 5px;
+  padding: 3px 8px;
+}
+.about {
+  display: flex;
+}
+.nature-content {
+   margin: auto;
+   max-width: 50%;
+   padding: 0 3%;
+}
+.nature-img {
+   line-height: 0;
+   max-width: 50%;
+}
+.nature-head {
+  color: rgba(255, 0, 0, .6);
+  max-width: 100%;
+}
+.nature-2 .nature-content {
+  order: 2;
+}
+.nature-2 .nature-img {
+  order: 1;
+}
+.custom-counter li {
+  padding: 10px 40px;
+}
+
+/*--------------------Contact section--------------------*/
+
+.contact-us {
+  background: url(../images/newsletter-bg.png) no-repeat center;
+  background-size: cover;
+  color: #fff;
+  line-height: 0;
+  padding: 200px;
+  text-align: center;
+}
+.contact-us h2 {
+   padding: 10px 0;
+}
+.email-input {
+  background-color: rgba(255, 255, 255, .2);
+  border: none;
+  border-radius: 20px 0 0 20px;
+  padding: 11px;
+}
+.send-btn {
+  color: rgba(255, 0, 0, .6);
+  margin: 20px -22px;
+  width: 100px;
+}
+.email-input::placeholder {
+  color: #fff;
+}
+.form {
+  width: 100%;
+}
+
+.map-img{
+  width: 100%;
+}
+
+/*-----------------------footer------------------*/
+
+.footer{
+  color: gray;
+  font-size: 14px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*------------------media queries-----------------------*/
+
+@media only screen and (max-width: 480px) {
+
+  .container {
+    font-size: 12px;
+  }
+  .header-content {
+    padding: 60px 0;
+    width: 200px;
+  }
+  .btns {
+    margin: 10px 5px;
+    padding: 8px;
+    width: 110px;
+  }
+  .contact-us {
+    padding: 80px 24px;
+  }
+  .email-input {
+    background-color: rgba(255, 255, 255, .2);
+    border: none;
+    border-radius: 20px 0 0 20px;
+    padding: 9px;
+    width: 120px;
+  }
+  .send-btn {
+    color: rgba(255, 0, 0, .6);
+    margin: 10px -18px;
+    width: 90px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+
+  /*------------------hamburger menu-------------------*/
+
+  .topnav {
+    display: none;
+  }
+
+  .navbar .menu-icon {
+    display: block;
+    float: right;
+  }
+  .topnav.responsive {
+    display: block;
+    float: none;
+    text-align: center;
+  }
+  .topnav.responsive li {
+    display: block;
+    padding: 5px;
+  }
+  .logo-image ,li:last-child {
+    display: inline-block;
+  }
+  .icons-section {
+    margin: 0 auto;
+    width: 75%;
+  }
+  .btns {
+    margin: 8px 5px;
+    padding: 8px;
+    width: 110px;
+  }  
+  .contact-us {
+    padding: 80px 24px;
+  } 
+  .send-btn {
+    margin: 10px -18px;
+    width: 90px;
+  } 
+  .about {
+    display: initial;
+  }
+  .nature-content {
+    max-width: 100%;
+    padding: 20px 5px;
+    text-align: center;
+  }
+  .nature-img {
+   max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  
+  .contact-us {
+    padding: 80px 40px;
+  }
+  .btns {
+    width: 110px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+  
+  .icon {
+    padding: 30px 10px;
+    width: 150px;
+  }
+  .btns {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 1023px){
+
+  .sub-container{
+    width: 100%;
+  }
+}

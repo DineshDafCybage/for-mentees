@@ -1,0 +1,140 @@
+@media only screen and (min-width: 769px) and (max-width: 1023px) {
+     .hero{
+         background-color: #86509c;
+         top: 0px;
+         width: 100%;
+    }
+     header {
+         background-color: #86509c;
+         flex-direction: row;
+         overflow: hidden;
+         padding: 10px 0;
+         position: fixed;
+         top: 0;
+         width: 100%;
+         z-index: 500;
+    }
+     header .logo {
+         flex-direction: column;
+         width: 50%;
+    }
+     header .logo img {
+         margin-left: 10%;
+    }
+     header nav {
+         width: 50%;
+    }
+     header nav ul {
+         flex-direction: row;
+    }
+     header nav ul li{
+         width: 20%;
+    }
+     .block {
+         margin: 0 auto;
+    }
+     .block nav ul li a.active {
+         background-color: #643a79;
+         border-radius: 5px;
+    }
+     * {
+        box-sizing: border-box
+    }
+     body {
+        font-family: Verdana, sans-serif;
+         margin:0
+    }
+     .mySlides {
+        display: none;
+         text-align: center;
+    }
+     .slideshow-container {
+         max-width: 1000px;
+         margin: auto;
+         position: relative;
+    }
+     .slideshow-container {
+         margin-top: 10vh;
+    }
+    /* Next & previous buttons */
+     .prev, .next {
+         border-radius: 0 3px 3px 0;
+         color: white;
+         cursor: pointer;
+         font-weight: bold;
+         font-size: 18px;
+         margin-top: -22px;
+         padding: 16px;
+         position: absolute;
+         transition: 0.6s ease;
+         top: 15%;
+         width: auto;
+    }
+    /* Position the "next button" to the right */
+     .next {
+         right: 0;
+         border-radius: 3px 0 0 3px;
+    }
+    /* Caption text */
+     .slide-text{
+         background-color:#86509c;
+         color: #ffffff;
+         margin: 0px 23%;
+         padding: 38px 12px;
+         position: relative;
+        text-align: center;
+    }
+     .slide-text1{
+         background-color:#86509c;
+         color: #ffffff;
+         margin: 0px 23%;
+         padding: 38px 12px;
+         position: relative;
+        text-align: center;
+    }
+     .slide-text2{
+         background-color:#86509c;
+         color: #ffffff;
+         margin: 0px 23%;
+         padding: 38px 12px;
+         position: relative;
+        text-align: center;
+    }
+     .button {
+         background-color: #ef7f34;
+         color: white;
+         display: inline-block;
+         margin: 14px 2px;
+         padding: 15px 40px;
+         text-decoration: none;
+    }
+     main{
+         margin-top: 0px;
+    }
+     main p {
+         margin: 0 20%;
+    }
+     main .services {
+         flex-direction: row;
+         flex-wrap: wrap;
+    }
+     main .services .service{
+         width: 50%;
+    }
+     footer ul {
+         flex-direction: row;
+         flex-wrap: wrap;
+    }
+     footer ul li{
+         width: 40%;
+    }
+     footer li a.active {
+         color: #2ac2e0;
+    }
+     .nav {
+         display: none;
+    }
+     .nav-toggle {
+         display: none;
+    }
+}

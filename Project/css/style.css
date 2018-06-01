@@ -1,8 +1,26 @@
 @import url(https://use.fontawesome.com/releases/v5.0.13/css/all.css);
 
-* {
-  margin: 0;
-  padding: 0;
+/*------------------------------reset css--------------------*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  border: 0;
+	font: inherit;
+	font-size: 100%;
+	margin: 0;
+	padding: 0;
+	vertical-align: baseline;
 }
 
 .container {
@@ -33,15 +51,26 @@
 /*--------------Navigation Bar-----------------*/
 
 .navbar {
+  box-sizing: border-box;
   margin: auto;
   padding: 20px;
-  box-sizing: border-box;
 }
 .navbar .menu-icon {
   background-color: transparent;
+  background: url(../images/menu-icon.png) no-repeat;
+  background-size: cover;
   border: none;
-  color: #fff;
   display: none;
+  margin: 10px;
+  padding: 10px 12px;
+}
+.navbar .close-icon {
+  background-color: transparent;
+  background: url(../images/close-icon.png) no-repeat center/100%;
+  border: none;
+  display: none;
+  margin: 10px;
+  padding: 10px 12px;
 }
 .navbar ul li {
   display: inline-block;
@@ -57,13 +86,14 @@ a {
   color: #fff;
   text-decoration: none;
 }
+a:hover {
+  background-color: #fff;
+  color: rgba(255, 0, 0, .6);
+}
 .contact-btn {
-  background-color: transparent;
   border: 1px solid #fff;
   border-radius: 20px;
-  color: #fff;
   padding: 8px;
-  text-decoration: none;
 }
 
 /*-------------Buttons-------------*/
@@ -79,11 +109,18 @@ a {
 .ask-btn {
   color: rgba(255, 0, 0, .6);
 }
-
+.ask-btn:hover {
+  background-color: transparent;
+  color: #fff;
+}
 .watch-btn {
   background-color: transparent;
   color: #fff;
   margin: 30px;
+}
+.watch-btn:hover {
+  background-color: #fff;
+  color: rgba(255, 0, 0, .6);
 }
 .scroll-btn {
   opacity: .6;
@@ -114,6 +151,11 @@ img {
   background-color: darkblue;
   color: #fff;
 }
+.askpr:hover {
+  background-color: #fff;
+  border: 1px solid darkblue;
+  color: darkblue;
+}
 
 /*------------------photo-section----------------*/
 
@@ -143,13 +185,13 @@ img {
   display: flex;
 }
 .nature-content {
-   margin: auto;
-   max-width: 50%;
-   padding: 0 3%;
+  margin: auto;
+  max-width: 50%;
+  padding: 0 3%;
 }
 .nature-img {
-   line-height: 0;
-   max-width: 50%;
+  line-height: 0;
+  max-width: 50%;
 }
 .nature-head {
   color: rgba(255, 0, 0, .6);
@@ -176,7 +218,7 @@ img {
   text-align: center;
 }
 .contact-us h2 {
-   padding: 10px 0;
+  padding: 10px 0;
 }
 .email-input {
   background-color: rgba(255, 255, 255, .2);
@@ -254,6 +296,10 @@ img {
     display: block;
     float: right;
   }
+  .navbar .close-icon {
+    display: block;
+    float: right;
+  }
   .topnav.responsive {
     display: block;
     float: none;
@@ -291,7 +337,7 @@ img {
     text-align: center;
   }
   .nature-img {
-   max-width: 100%;
+    max-width: 100%;
   }
 }
 

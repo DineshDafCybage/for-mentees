@@ -1,13 +1,27 @@
-function myFunction() {
-    var x = document.getElementById("myTopnav");
-    var button = document.getElementById("menu-icon");
+'use strict';
 
-    if (x.className === "topnav") {
-        x.className += " responsive";
-        button.innerHTML = "<i class='fas fa-times'></i>";
+// Call init function on window onload.
+// window.onload = function() {
+//   init();
+//   console.log("called");
+// };
+
+// function init(){
+  var navbar = document.getElementById("myTopnav");
+  var menubtn = document.getElementById("menubtn");
+
+  //Show/hide navbar on click of menu-icon
+  menubtn.addEventListener('click', showMenu);
+// }
+
+
+function showMenu() {
+    if (navbar.className === "topnav") {
+        navbar.classList.add("responsive");
+        menubtn.className = "close-icon";
     } else {
-        x.className = "topnav";
-        button.innerHTML = "<i class='fa fa-bars'></i>";
+        navbar.classList.remove("responsive");
+        menubtn.className = "menu-icon";
     }
 }
 

@@ -1,27 +1,27 @@
 'use strict';
 
 // Call init function on window onload.
-// window.onload = function() {
-//   init();
-//   console.log("called");
-// };
+  window.onload = function() {
+    init();
+  };
 
-// function init(){
+ function init(){
+  //Show/hide navbar on click of menu-icon
+  menubtn.addEventListener('click', toggleMenu);
+ }
+
+
+function toggleMenu() {
+    
   var navbar = document.getElementById("myTopnav");
   var menubtn = document.getElementById("menubtn");
 
-  //Show/hide navbar on click of menu-icon
-  menubtn.addEventListener('click', showMenu);
-// }
-
-
-function showMenu() {
-    if (navbar.className === "topnav") {
-        navbar.classList.add("responsive");
-        menubtn.className = "close-icon";
-    } else {
-        navbar.classList.remove("responsive");
+    if (navbar.className === "show") {
+        navbar.className = "close";
         menubtn.className = "menu-icon";
+    } else {
+        navbar.className = "show";
+        menubtn.className = "close-icon";
     }
 }
 

@@ -1,0 +1,441 @@
+body {
+  background-color: #fff;
+  font-family: Arial;
+  margin: 0;
+}
+
+.grid {
+  width: 100%;
+}
+
+#showcase {
+  color: #fff;
+  min-height: 450px;
+}
+
+.bg-image {
+  background: url(../images/background.png) center/cover no-repeat;
+  background-color: blue;
+  height: 450px;
+  position: absolute;
+  width: 100%;
+}
+
+.logo-image {
+  height: 60px;
+  padding: 15px;
+  position: absolute;
+  width: 90px;
+}
+#hamburger-btn {
+  cursor: pointer;
+  position: relative;
+  float: right;
+  margin: 8px 8px;
+}
+#hamburger-btn:hover {
+  transform: scale(.9);
+}
+
+.content-title {
+  font-size: 35px;
+  text-align: left;
+  width: 100%;
+}
+
+.custom-title {
+  padding-left: 5%;
+  padding-top: 3%;
+  width: 46%;
+}
+.content {
+  width: 100%;
+}
+
+.content p {
+  padding-left: 17px;
+  padding-right: 17px;
+}
+
+.content ol {
+  padding-left: 33px;
+}
+ 
+.color-text {
+  color: #2196F3;
+}
+
+.gallary-section,
+.consultation-section,
+.testimonial-section,
+.contact-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.title-text {
+  font-size: 25px;
+}
+
+.img-row {
+  margin-top: 20px;
+  text-align: center; 
+  width: 100%;
+}
+
+#img1 {
+  background: url(../images/gallery-image-1.png) center/cover no-repeat;
+  height: 260px;
+  width: 100%;
+}
+
+#img2 {
+  background: url(../images/gallery-image-2.png) center/cover no-repeat;
+  height: 260px;
+  margin: 5px auto;
+  width: 300px;
+}
+
+#img3 {
+  background: url(../images/gallery-image-3.png) center/cover no-repeat;
+  height: 260px;
+  width: 100%;
+}
+
+#img4 {
+  background: url(../images/gallery-image-4.png) center/cover no-repeat;
+  height: 260px;
+  margin: 5px auto;
+  width: 100%;
+}
+
+#img5 {
+  background: url(../images/gallery-image-5.png) center/cover no-repeat;
+  height: 260px;
+  margin: 5px auto;
+  width: 300px;
+}
+
+#img6 {
+  background: url(../images/gallery-image-6.png) center/cover no-repeat;
+  height: 260px;
+  width: 100%;
+}
+
+.row-title {
+  padding-top: 5px;
+}
+
+#title-3 {
+  padding-top: 10px;
+}
+
+#section2,
+#section3,
+#section4 {
+  margin-top: 20px;
+}
+
+.text-row {
+  display: block;
+  margin: 0;
+  padding-left: 17px;
+  padding-right: 17px;
+  text-align: initial;
+}
+
+h1 {
+  font-weight: normal;
+
+}
+.basic-details,
+.basic-info {
+  margin-top: 15px;
+  width: 100%;
+}
+
+.info {
+   background-color:#e4e4e4;
+   margin: 5px auto 0 auto;
+   padding-bottom: 15px;
+   padding-top: 15px;
+   text-align: center;
+   width: 50%;
+}
+
+.info-color {
+  background-color: #00aaef;
+  color: #fff;
+  margin: 5px auto 0 auto;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  width: 50%;
+}
+
+.testimonial-img-holder {
+  margin-top: 30px;
+}
+
+.person1 {
+  background: url(../images/testimonial-1.png) no-repeat;
+  height: 147px;
+  margin: 0 auto;
+  width: 147px;
+}
+
+.person2 {
+  background: url(../images/testimonial-2.png) no-repeat;
+  height: 147px;
+  margin: 0 auto;
+  width: 147px;
+}
+
+.person3 {
+  background: url(../images/testimonial-3.png) no-repeat;
+  height: 147px;
+  margin: 0 auto;
+  width: 147px;
+}
+
+.testimonial-text {
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 30px;
+  text-align: center;    
+}
+
+.contact-email {
+  padding-bottom: 15px;
+}
+
+.contact-address {
+  padding-top: 15px;
+}
+
+.copyright-info {
+  color: #fff;
+  margin-top: 240px;
+  position: absolute;
+}
+
+footer {
+  align-items:center;
+  background: url(../images/footer-image.png) no-repeat;
+  background-size: cover;
+  display:flex;
+  justify-content:center;
+  margin-top:20px;
+  min-height: 540px;
+  text-align: center;
+}
+
+.footer-logo {
+  float: left;
+  margin: 21px 170px;
+  position: relative;
+  width: 80px;
+}
+
+#hamburger-btn {
+  display: block;
+}
+
+nav {
+  display: none;
+}
+
+/* For Ipad  */
+@media only screen and (min-width: 768px) {
+.content-title {
+  float: left;
+  text-align: left;
+  width: 40%;
+}
+
+.content {
+  float: left;
+  width: 55%;
+}
+   
+#img1 {
+  float: left;
+  margin-left: 5px;
+  width:60%;
+}
+
+#img2 {
+  float: right;
+  margin: 0;
+  width: 38%;
+}
+   
+#img3 {
+  float: left;
+  margin-left: 5px;
+  width:49%;
+}
+
+#img4 {
+  float: right;
+  margin: 0;
+  width: 49%;
+}
+ 
+#img5 {
+  float: left;
+  margin-left: 5px;
+  width:38%;
+}
+
+#img6 {
+  float: right;
+  margin: 0;
+  width: 60%;
+}
+.row-title {
+  display: inline-block;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.clsOuterDiv {
+  align-items: flex;
+  display: flex;
+}
+
+#holder1 {
+  width: 50%;
+}
+
+#holder2 {
+  width:50%;
+}
+
+.testimonial-holder {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-wrap {
+  display: flex;
+  justify-content: space-around;
+ }
+
+#hamburger-btn {
+  display: none;
+}
+
+nav {
+  display: block;
+  top: 404px;
+}
+
+.hide-nav {
+  display: block;
+}
+}
+
+/* For Desktop */
+@media only screen and (min-width: 1025px)  { 
+.testimonial-holder {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.testimonial-img-holder {
+  width: 50%;
+}
+}
+
+nav {
+  margin: 0;
+  position: relative;
+  width:100%;
+}
+
+nav ul li {
+  display: inline;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+nav ul li a,
+nav .active {
+  color: #e8e8e8;
+}
+
+nav a:hover,
+nav .active {
+   color: #ffc107;
+}
+
+.nav-menu {
+  display: none;
+}
+
+#main-nav {
+  display: flex;
+  width: 96%;
+  justify-content: space-evenly;
+
+}
+
+.show-menu {
+  display: block;
+}
+
+.hide-menu
+{
+  display: none;
+}
+
+@media only screen and (max-width: 767px) {
+nav {
+  position: absolute;
+  right: 0px;
+  top: 70px;
+  width: 100%;
+}
+
+ul {
+  -webkit-padding-start: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+#main-nav {
+  display: block;
+  position: absolute;
+  width: 100%; 
+}
+
+nav ul li {
+  display: block;
+  list-style: none;
+  margin: 2px;
+  background-color: gray;
+  border: 1px solid #d8d8dc;
+}
+
+nav ul li:hover {
+  background-color: #046996
+}
+
+nav a:hover,
+nav .active {
+   color: #ffc107;
+   text-decoration: none;
+   background-color: #046996;
+}
+  
+.show-nav {
+  display: block;
+}
+
+.hide-nav {
+  display: none;
+}
+}

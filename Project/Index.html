@@ -100,10 +100,12 @@
       </div>
       <div class="contact-us" id="contact-us">
         <h2 class="contact-us-head">Sign up for our newsletter</h2>
-        <form class="form" id="form" method="post">
+        <form class="form" id="form">
           <input class="email-input" type="text" name="email" placeholder="Email address">
-          <input type="submit" class="btns send-btn" value="Send">
+          <button type="submit" class="btns send-btn" id="send-btn">Send</button>
         </form>
+        <p class="error-msg hide-msg" id="error-msg">Enter valid email address.
+        </p>
       </div>
       <div class="map">
         <img class="image" src="./images/map-section.png" class="map-img" alt="roads image">

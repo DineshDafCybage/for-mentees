@@ -21,15 +21,23 @@
 
 
 function checkInput() {
+  var err = document.getElementById("error-msg");
   var email = document.forms["form"]["email"].value;
   var atpos = email.indexOf("@");
   var dotpos = email.lastIndexOf(".");
+  event.preventDefault();
   if (atpos<1 || dotpos<atpos+2 || dotpos+2>=email.length) {
-    alert("Not a valid e-mail address");
+    err.classList.remove('hide-msg');
+    err.classList.add('show-msg');
     return false;
   }
+  else {
+    if(err.classList.contains('show-msg')) {
+    err.classList.add('hide-msg');
+    err.classList.remove('show-msg');
+    }
+  }
 }
- 
 
 function toggleMenu() {
 

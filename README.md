@@ -1,5 +1,9 @@
 # Static Website Boilerplate (for HTML/SCSS/ES6)
 
+## Pre-requisites
+
+Python 2.7.*
+
 ## Getting Started
 
 Clone the repo

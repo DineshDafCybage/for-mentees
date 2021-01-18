@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="Enter your description here" name="Description"><!-- ------------------CDN--------------------- -->
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script crossorigin="anonymous" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script crossorigin="anonymous" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" src="https://code.jquery.com/jquery-3.5.1.js"></script><!-- -----------------Local links---------------------- -->
+    <script defer src="../script/quiz-page.js"></script>
+    <link href="../css/quiz-page.css" rel="stylesheet">
+    <title>
+      quiz-started
+    </title>
+  </head>
+  <body>
+    <div class="container" id="quiz-here">
+      <!-- --------------title currentquestion and timer---------------         -->
+      <div id="question-container">
+        <div class="row">
+          <div class="col-6 text-right">
+            <h2 id="title"></h2>
+            <div class="col text-right" id="exit"></div>
+          </div>
+          <div class="col-6 text-right">
+            <button class="btn -btn-lg btn-danger" onclick="exit()">Exit</button>
+          </div>
+        </div>
+        <hr>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6">
+              <p class="que">
+                <span id="curr-que"></span>/<span id="tot-que"></span>
+              </p>
+            </div>
+            <div class="col-6 timer text-right" id="timer"></div>
+          </div>
+        </div><!-- --------------------title end--------------------- -->
+        <!-- ---------------------Question here-------------------- -->
+        <div id="question"></div><!-- ----------------------------image here--------------------- -->
+        <div class="que-img">
+          <img alt="" class="img" id="image" src="">
+        </div><!-- ----------------options here-------------------------- -->
+        <form class="col-12 form">
+          <div class="col">
+            <input id="btnradio1" name="option" type="radio"><label id="ops1"></label>
+          </div>
+          <div class="col">
+            <input id="btnradio2" name="option" type="radio"><label id="ops2"></label>
+          </div>
+          <div class="col">
+            <input id="btnradio3" name="option" type="radio"><label id="ops3"></label>
+          </div>
+          <div class="col">
+            <input id="btnradio4" name="option" type="radio"><label id="ops4"></label>
+          </div>
+        </form>
+      </div><!-- -----------------all controls for the quiz here---------------- -->
+      <div class="controls">
+        <button class="first-btn btn" id="first-btn">First</button> <button class="previous-btn btn" id="previous-btn">Previous</button> <button class="next-btn btn" id="next-btn">Next</button> <button class="last-btn btn" id="last-btn">Last</button>
+      </div><!-- ----------------submit---------------- -->
+       <button class="btn submit" id="showResult" onclick="checkSubmit()" type="button">Submit</button>
+    </div><!-- ---------------result here------------------ -->
+    <div class="container hide" id="result-here">
+      <div id="colorCode">
+        <div class="container">
+          <button class="btn btn-primary disabled">Valid Answer</button> <button class="btn btn-success disabled">Correct Answer</button> <button class="btn btn-danger disabled">Your Answer</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
